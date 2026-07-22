@@ -7,9 +7,15 @@
 
 int main(int argc, char **argv)
 {
-	int i = argc;
+	int port;
+	int sockaddr;
 
-	if( i < 2)
-		write(2, "Wrong Number of arguments\n", 27);
+	if(argc != 2)
+	{
+		write(2, "Wrong number of arguments\n", 26);
+		exit(1);
+	}
+
+	port = atoi(argv[1])
 
 }
